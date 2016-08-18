@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING NOTHING</title>
+
+  <style>
+  div {
+    animation-duration: 1.26s;
+    animation-name: nothing;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+
+  @keyframes nothing {
+    from {
+      font-size: 0em;
+    }
+
+    15,7% {
+      font-size:18em;
+    }
+
+    21,1% {
+      font-size: 10em;
+    }
+
+    50% {
+      font-size:18em;
+    }
+
+    to {
+      font-size:18em;
+    }
+  }
+  </style>
+
+  <script>
+    var audio_file = new Audio('nothing.mp3')
+    audio_file.addEventListener('timeupdate', function(){
+      var buffer = .44
+      if(this.currentTime > this.duration - buffer){
+          this.currentTime = 0
+          this.play()
+      }}, false);
+    audio_file.play();
+  </script>
+</head>
+
+<body>
+  <div>NOTHING</div>
+</body>
+</html>
